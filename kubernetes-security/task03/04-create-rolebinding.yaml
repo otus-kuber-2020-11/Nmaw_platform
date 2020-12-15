@@ -8,6 +8,6 @@ subjects:
   namespace: dev
   apiGroup: ""
 roleRef:
-  kind: ClusterRole
+  kind: Role
   name: admin
   apiGroup: rbac.authorization.k8s.io
