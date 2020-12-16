@@ -17,4 +17,17 @@ Nmaw Platform repository
 11. Get manifest 'kubectl run frontend --image avtandilko/hipster-frontend:v0.0.1 --restart=Never --dry-run=client -o yaml > frontend-pod.yaml'
 12. Fix manifest frontend-pod.yaml and add to git branch kubernetes-intro.
 
+HW-2
+00. Create kind clister with 3 master nodes and 3 workers nodes
+01. Fix frontend-replicaset.yaml and set replicas 3
+02. ReplicaSet don`t update pods
+03. Prepare paymentservice-replicaset.yaml as frontend-replicaset.yaml
+04. Prepare paymentservice-deployment.yaml
+05. Update paymentservice-deployment.yaml to v0.0.2
+06. Rollout paymentservice-deployment.yaml to v0.0.1
+07. Create paymentservice-deployment-bg.yaml for blue green deployment
+08. Create paymentservice-deployment-reverse.yaml for Reverse Rolling Update
+09. Update frontend-deployment.yaml for use readinessProbe
+10. Create node-exporter-daemonset.yaml
+11. Update node-exporter-daemonset.yaml for use in all nodes include master nodes
 
